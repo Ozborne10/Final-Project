@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <title>Liverpool FC</title>
+</head>
+<body>
+  <header class='Site-Header'>
+    <img src="images/Logo.png" alt="Logo" class="Logo"><h1>Liverpool FC</h1>
+    <div class="nav">
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle">
+      <div class="menu">
+        <a href="#">Squad</a>
+        <a href="#">Fixtures & Results</a>
+        <a href="#">Shop</a>
+        <a href="#">About Us</a>
+      </div>
+    </div>
+    </nav>
+  </header>
+  <Section class="news">
+    <h1>News</h1>
+    <!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides" style="display: block;">
+    <div class="headline">Liverpool Draw 1-1 With 10 Men Chelsea</div>
+      <img src="images/livvsche.jpeg" style="display: block; object-fit: cover; height: 950px; width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="headline">Captain Henderson Signs New Contract</div>
+      <img src="images/Henderson.jpeg" style="object-fit: cover; height: 950px; width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="headline">Liverpool overcome AC Milian 3-2 in UCL Opener</div>
+      <img src="images/Milan.jpg" style="object-fit: cover; height: 950px; width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="headline">Liverpool Defeat Leeds 3-0 Away</div>
+      <img src="images/Leeds.jpeg" style="object-fit: cover; height: 950px; width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="images/livvsche.jpeg" style="display: active; width:100%" onclick="currentSlide(1)" alt="Liverpool Draw 1-1 With 10 Men Chelsea">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/Henderson.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Captain Henderson Signs New Contract">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/Milan.jpg" style="width:100%" onclick="currentSlide(3)" alt="Liverpool overcome AC Milian 3-2 in UCL Opener">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/Leeds.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Liverpool Defeat Leeds 3-0 Away">
+    </div>
+  </div>
+</div>
+  </Section>
+  <section class="middle-section">
+    <div class="squad-players">
+      <h1>Squad</h1>
+        <ul>
+          <li class="player"><img src="images/Salah.png" alt="Salah" Class="Profile-Pic">Salah</li>
+          <li class="player"><img src="images/Virgil.png" alt="Van Dijk" Class="Profile-Pic">Van Dijk</li>
+          <li class="player"><img src="images/Mane.png" alt="Mane" Class="Profile-Pic">Mane</li>
+          <li class="player"><img src="images/TAA.png" alt="TAA" Class="Profile-Pic">TAA</li>
+          <li class="player"><img src="images/Firmino.png" alt="Firmino" Class="Profile-Pic">Firmino</li>
+          <li class="player"><img src="images/Robertson.png" alt="Robertson" Class="Profile-Pic">Robertson</li>
+          <li class="player"><img src="images/JHenderson.png" alt="Henderson" Class="Profile-Pic">Henderson</li>
+          <li class="player"><img src="images/Jota.png" alt="Jota" Class="Profile-Pic">Jota</li>
+          <!-- <li class="player"><img src="images/Ox.png" alt="Ox" Class="Profile-Pic">Ox</li>
+          <li class="player"><img src="images/Alisson.png" alt="Alisson" Class="Profile-Pic">Alisson</li>
+          <li class="player"><img src="images/Thiago.png" alt="Thiago" Class="Profile-Pic">Thiago</li>
+          <li class="player"><img src="images/Gomez.png" alt="Gomez" Class="Profile-Pic">Gomez</li>
+          <li class="player"><img src="images/Matip.png" alt="Matip" Class="Profile-Pic">Matip</li>
+          <li class="player"><img src="images/Keita.png" alt="Keita" Class="Profile-Pic">Keita</li>
+          <li class="player"><img src="images/Fabinho.png" alt="Fabinho" Class="Profile-Pic">Fabinho</li>
+          <li class="player"><img src="images/Elliott.png" alt="Elliott" Class="Profile-Pic">Elliott</li>
+          <li class="player"><img src="images/Milner.png" alt="Milner" Class="Profile-Pic">Milner</li>
+          <li class="player"><img src="images/Jones.png" alt="Jones" Class="Profile-Pic">Jones</li>
+          <li class="player"><img src="images/Konate.png" alt="Konate" Class="Profile-Pic">Konate</li>
+          <li class="player"><img src="images/Origi.png" alt="Origi" Class="Profile-Pic">Origi</li> -->
+        </ul>
+        </div>
+    </div>
+    <table class="pl-table">
+      <caption>PL Table</caption>
+      <tr>
+      <th>Place</th>
+      <th>Club</th>
+      <th>MP</th>
+      <th>Points</th>
+      <th>GD</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Liverpool</td>
+      <td>38</td>
+      <td>99</td>
+      <td>+63</td>
+    </tr>
+    <tr>
+      <td>2</td>
+        <td>Man City</td>
+      <td>38</td>
+      <td>96</td>
+      <td>+61</td>
+      </tr>
+    <tr>
+      <td>3</td>
+        <td>Chelsea</td>
+      <td>38</td>
+      <td>71</td>
+      <td>+42</td>
+      </tr>
+    <tr>
+      <td>4</td>
+        <td>Man Utd</td>
+      <td>38</td>
+      <td>68</td>
+      <td>+44</td>
+      </tr>
+    </table>
+
+    <table class="Fixtures">
+      <caption>PL Fixtures</caption>
+      <tr>
+      <th>Date</th>
+      <th>Home</th>
+      <th>Time</th>
+      <th>Away</th>
+      </tr>
+        <tr>
+          <td>13th Sep</td>
+          <td>Leeds</td>
+          <td>1:30</td>
+          <td>Liverpool</td>
+        </tr>
+      <tr>
+          <td>19th Sep</td>
+          <td>Liverpool</td>
+          <td>00:00</td>
+          <td>Crystal Palace</td>
+        </tr>
+      <tr>
+          <td>26th Sep</td>
+          <td>Brentford</td>
+          <td>2:30</td>
+          <td>Liverpool</td>
+        </tr>
+      <tr>
+          <td>4th Oct</td>
+          <td>Liverpool</td>
+          <td>2:30</td>
+          <td>Man City</td>
+        </tr>
+    </table>
+
+  </section>
+
+  <section class="shop">
+    <h1>Shop</h1>
+    <ul class="item-list">
+      <li class="item"><img src="images/Homekit.png" alt="Home Kit" class="Shop-item">Home Kit</li>
+      <li class="item"><img src="images/Awaykit.png" alt="Away Kit" class="Shop-item">Away Kit</li>
+      <li class="item"><img src="images/Thirdkit.png" alt="Third Kit" class="Shop-item">Third Kit</li>
+      <!-- <li class="item"><img src="images/Jacket.png" alt="Jacket" class="Shop-item">Jacket</li>
+      <li class="item"><img src="images/Beanie.png" alt="Beanie" class="Shop-item">Beanie</li> -->
+    </ul>
+    <div class="Order-form">
+    <form id="Order-Form">
+    <fieldset>
+      <legend>Your Order</legend>
+      <label for="name">Full Name</label>Full Name
+      <input type="text" id="name" class="name" placeholder="First & Last Name">
+      <label for="select">Select List</label>Kit
+      <select id="select" class="select">
+        <option value>Choose Kit</option>
+        <optgroup label="Option Group 1">
+          <option value>Home</option>
+          <option value>Away</option>
+          <option value>Third</option>
+        </optgroup>
+      </select>
+      <label for="Address">Address</label>Address
+      <input type="text" id="Address" class="Address" placeholder="Address">
+      <label for="State">State</label>State
+      <select id="State" class="State">
+        <option value>State</option>
+        <optgroup label="Option Group 2">
+          <option value>NSW</option>
+          <option value>QLD</option>
+          <option value>ACT</option>
+          <option value>VIC</option>
+          <option value>NT</option>
+          <option value>WA</option>
+          <option value>TAS</option>
+          <option value>SA</option>
+          <option value>WA</option>
+        </optgroup>
+      </select>
+      <label for="Country">Country</label>Country
+      <select id="Country" class="Country">
+        <option value>Country</option>
+        <optgroup label="Option Group 3">
+          <option value>Australia</option>
+          <option value>USA</option>
+          <option value>UK</option>
+        </optgroup>
+      </select>
+      <button type="submit" class="Submit-Form" id="Submit-Form">Submit</button>
+    </fieldset>
+  </form>
+</div>
+  </section>
+  <!--  -->
+  <footer class="site-footer"><div><a href="https://www.facebook.com/LiverpoolFC/" target="_blank"><img src="images/Facebook.png" alt="Facebook" class=Site-Link></a><a href="https://www.instagram.com/liverpoolfc/?hl=en" target="_blank"><img src="images/Instagram.png" alt="Instagram" class=Site-Link></a><a href="https://twitter.com/LFC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="images/Twitter.png" alt="Twitter" class=Site-Link></a></div>
+    <div><p>© Copyright 2021 - Liverpool Football Club</p></div></footer>
+<!-- Modal Section -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+  </div>
+</div>
+</body>
+</html>
