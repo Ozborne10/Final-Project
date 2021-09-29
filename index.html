@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js"></script>
-  <title>Liverpool FC</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="Normalise.css">
+  <title>LiverpoolFC</title>
 </head>
 <body>
   <header class='Site-Header'>
@@ -16,22 +15,24 @@
       <label for="toggle">&#9776;</label>
       <input type="checkbox" id="toggle">
       <div class="menu">
-        <a href="#">Squad</a>
+        <a href="Index.html">Home</a>
+        <a href="Squad.html">Squad</a>
         <a href="#">Fixtures & Results</a>
+        <a href="Table.html">Table</a>
         <a href="#">Shop</a>
         <a href="#">About Us</a>
       </div>
     </div>
     </nav>
   </header>
+  <Section class="News-Header"><h1>News</h1></Section>
   <Section class="news">
-    <h1>News</h1>
     <!-- Container for the image gallery -->
 <div class="container">
 
   <!-- Full-width images with number text -->
-  <div class="mySlides" style="display: block;">
-    <div class="headline">Liverpool Draw 1-1 With 10 Men Chelsea</div>
+  <div class="mySlides">
+    <div class="headline">Liverpool Draw 1-1 With 10 Men Chelsea<span id="Open" class="Open"> - View Highlights</span></div>
       <img src="images/livvsche.jpeg" style="display: block; object-fit: cover; height: 950px; width:100%">
   </div>
 
@@ -76,18 +77,19 @@
   </div>
 </div>
   </Section>
+
   <section class="middle-section">
     <div class="squad-players">
       <h1>Squad</h1>
         <ul>
-          <li class="player"><img src="images/Salah.png" alt="Salah" Class="Profile-Pic">Salah</li>
-          <li class="player"><img src="images/Virgil.png" alt="Van Dijk" Class="Profile-Pic">Van Dijk</li>
-          <li class="player"><img src="images/Mane.png" alt="Mane" Class="Profile-Pic">Mane</li>
-          <li class="player"><img src="images/TAA.png" alt="TAA" Class="Profile-Pic">TAA</li>
-          <li class="player"><img src="images/Firmino.png" alt="Firmino" Class="Profile-Pic">Firmino</li>
-          <li class="player"><img src="images/Robertson.png" alt="Robertson" Class="Profile-Pic">Robertson</li>
-          <li class="player"><img src="images/JHenderson.png" alt="Henderson" Class="Profile-Pic">Henderson</li>
-          <li class="player"><img src="images/Jota.png" alt="Jota" Class="Profile-Pic">Jota</li>
+          <li class="player" style="background-image: url('images/Salah.jpeg');"><span class="Player-Name">Salah</span></li>
+          <li class="player" style="background-image: url('images/VVD.jpeg');"><span class="Player-Name">Van Dijk</span></li>
+          <li class="player" style="background-image: url('images/Mane.jpeg');"><span class="Player-Name">Mane</span></li>
+          <li class="player" style="background-image: url('images/TAA.jpeg');"><span class="Player-Name">Alexander-Arnold</span></li>
+          <li class="player" style="background-image: url('images/Firmino.jpeg');"><span class="Player-Name">Firmino</span></li>
+          <li class="player" style="background-image: url('images/Allison.jpeg');"><span class="Player-Name">Alisson</span></li>
+          <li class="player" style="background-image: url('images/HendersonP.jpeg');"><span class="Player-Name">Henderson</span></li>
+          <li class="player" style="background-image: url('images/Jota.jpeg');"><span class="Player-Name">Jota</span></li>
           <!-- <li class="player"><img src="images/Ox.png" alt="Ox" Class="Profile-Pic">Ox</li>
           <li class="player"><img src="images/Alisson.png" alt="Alisson" Class="Profile-Pic">Alisson</li>
           <li class="player"><img src="images/Thiago.png" alt="Thiago" Class="Profile-Pic">Thiago</li>
@@ -101,6 +103,7 @@
           <li class="player"><img src="images/Konate.png" alt="Konate" Class="Profile-Pic">Konate</li>
           <li class="player"><img src="images/Origi.png" alt="Origi" Class="Profile-Pic">Origi</li> -->
         </ul>
+        <a class="Squad-Link" href="Squad.html">View Full Squad</a>
         </div>
     </div>
     <table class="pl-table">
@@ -141,6 +144,7 @@
       <td>+44</td>
       </tr>
     </table>
+    <div><a href="Table.html">View Full Table</a></div>
 
     <table class="Fixtures">
       <caption>PL Fixtures</caption>
@@ -175,7 +179,7 @@
           <td>Man City</td>
         </tr>
     </table>
-
+<div><a href="#">View All Fixtures</a></div>
   </section>
 
   <section class="shop">
@@ -187,7 +191,7 @@
       <!-- <li class="item"><img src="images/Jacket.png" alt="Jacket" class="Shop-item">Jacket</li>
       <li class="item"><img src="images/Beanie.png" alt="Beanie" class="Shop-item">Beanie</li> -->
     </ul>
-    <div class="Order-form">
+    <div class="Order-Form">
     <form id="Order-Form">
     <fieldset>
       <legend>Your Order</legend>
@@ -232,24 +236,22 @@
     </fieldset>
   </form>
 </div>
+<!-- </div> -->
   </section>
-  <!--  -->
+
   <footer class="site-footer"><div><a href="https://www.facebook.com/LiverpoolFC/" target="_blank"><img src="images/Facebook.png" alt="Facebook" class=Site-Link></a><a href="https://www.instagram.com/liverpoolfc/?hl=en" target="_blank"><img src="images/Instagram.png" alt="Instagram" class=Site-Link></a><a href="https://twitter.com/LFC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="images/Twitter.png" alt="Twitter" class=Site-Link></a></div>
     <div><p>© Copyright 2021 - Liverpool Football Club</p></div></footer>
-<!-- Modal Section -->
-<button id="myBtn">Open Modal</button>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
-
-</div>
+<div id="Modal-Mask" class="Modal-Mask">
+  <div class="Modal-Content">
+    <button id="Close" class="Close">X</button>
+    <video width="700" height="auto" controls>
+  <source src="images/Highlights.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
   </div>
 </div>
+<script src="script.js"></script>
 </body>
 </html>

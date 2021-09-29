@@ -1,4 +1,24 @@
+// modal
 
+function modalOpen() {
+  document.getElementById("Modal-Mask").style.display = "flex";
+}
+
+Open.addEventListener("click", modalOpen);
+
+function modalClose() {
+  document.getElementById("Modal-Mask").style.display = "none";
+}
+
+Close.addEventListener("click", modalClose);
+
+// form
+
+document.querySelector('#Submit-Form').addEventListener('click', function(event) {
+  event.preventDefault()
+  });
+
+// slides
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -29,41 +49,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-
-
-
-// Get the modal
-const modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-const btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-const span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-myBtn.addEventListener('click',function() {
-  modal.style.display = "block";
-  modal.style.zIndex = "100000";
-  body.style.zIndex = "-2";
-});
-
-// When the user clicks on <span> (x), close the modal
-span.addEventListener('click',function() {
-  modal.style.display = "none";
-
-});
-
-// When the user clicks anywhere outside of the modal, close it
-window.addEventListener('click',function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-});
-
-
-// form
-
-document.querySelector('#Submit-Form').addEventListener('click', function(event) {
-  event.preventDefault()
-  });

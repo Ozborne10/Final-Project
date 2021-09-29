@@ -4,16 +4,174 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="squads.css">
-  <script src="squads.js"></script>
+  <link rel="stylesheet" href="Squad.css">
+  <link rel="stylesheet" href="Normalise.css">
   <title>Document</title>
 </head>
 <body>
-<button id="Open" class="Open">Open Modal</button>
-<div id="Modal-Mask" class="Modal-Mask">
+  <header class='Site-Header'>
+    <img src="images/Logo.png" alt="Logo" class="Logo"><h1>Liverpool FC</h1>
+    <div class="nav">
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle">
+      <div class="menu">
+        <a href="Index.html">Home</a>
+        <a href="Squad.html">Squad</a>
+        <a href="#">Fixtures & Results</a>
+        <a href="Table.html">Table</a>
+        <a href="#">Shop</a>
+        <a href="#">About Us</a>
+      </div>
+    </div>
+    </nav>
+  </header>
+  <section class="Squad-Heading">
+    <h1>Squad List</h1>
+  </section>
+  <section class="Squad">
+    <div class="Squad-List">
+      <div class="Forwards">
+        <h2 class="Position-Heading">Forwards</h2>
+        <ul class="Player-List">
+          <li class="player" style="background-image: url('images/Salah.jpeg');"><span id="openSalah" class="Player-Name">Salah</span></li>
+          <li class="player" style="background-image: url('images/Mane.jpeg');"><span id="openMane" class="Player-Name">Mane</span></li>
+          <li class="player" style="background-image: url('images/Firmino.jpeg');"><span id="openFirmino" class="Player-Name">Firmino</span></li>
+          <li class="player" style="background-image: url('images/Jota.jpeg');"><span class="Player-Name">Jota</span></li>
+          <li class="player" style="background-image: url('images/Minamino.jpeg');"><span class="Player-Name">Minamino</span></li>
+          <li class="player" style="background-image: url('images/Origi.jpeg');"><span class="Player-Name">Origi</span></li>
+        </ul>
+      </div>
+      <div class="Midfielders">
+        <h2 class="Position-Heading">Midfielders</h2>
+        <ul class="Player-List">
+        <li class="player" style="background-image: url('images/HendersonP.jpeg');"><span id="openHenderson" class="Player-Name">Henderson</span></li>
+        <li class="player" style="background-image: url('images/Fabinho.jpeg');"><span class="Player-Name">Fabinho</span></li>
+        <li class="player" style="background-image: url('images/Thiago.jpeg');"><span class="Player-Name">Thiago</span></li>
+        <li class="player" style="background-image: url('images/Jones.jpeg');"><span class="Player-Name">Jones</span></li>
+        <li class="player" style="background-image: url('images/Elliott.jpeg');"><span class="Player-Name">Elliott</span></li>
+        <li class="player" style="background-image: url('images/Keita.jpeg');"><span class="Player-Name">Keita</span></li>
+        <li class="player" style="background-image: url('images/Ox.jpeg');"><span class="Player-Name">Chamberlain</span></li>
+        <li class="player" style="background-image: url('images/Milner.jpeg');"><span class="Player-Name">Milner</span></li>
+        </ul>
+      </div>
+      <div class="Defenders">
+        <h2 class="Position-Heading">Defenders</h2>
+        <ul class="Player-List">
+        <li class="player" style="background-image: url('images/VVD.jpeg');"><span id="openVVD" class="Player-Name">Van Dijk</span></li>
+        <li class="player" style="background-image: url('images/TAA.jpeg');"><span class="Player-Name">Alexander-Arnold</span></li>
+        <li class="player" style="background-image: url('images/Robertson.jpeg');"><span class="Player-Name">Robertson</span></li>
+        <li class="player" style="background-image: url('images/Matip.jpeg');"><span class="Player-Name">Matip</span></li>
+        <li class="player" style="background-image: url('images/Gomez.jpeg');"><span class="Player-Name">Gomez</span></li>
+        <li class="player" style="background-image: url('images/Phillips.jpeg');"><span class="Player-Name">Phillips</span></li>
+        <li class="player" style="background-image: url('images/Konate.jpeg');"><span class="Player-Name">Konate</span></li>
+        <li class="player" style="background-image: url('images/Tsimikas.jpeg');"><span class="Player-Name">Tsimikas</span></li>
+        <li class="player" style="background-image: url('images/Williams.jpeg');"><span class="Player-Name">Williams</span></li>
+        </ul>
+      </div>
+      <div class="Goalkeepers">
+        <h2 class="Position-Heading">Goalkeepers</h2>
+        <ul class="Player-List">
+        <li class="player" style="background-image: url('images/Allison.jpeg');"><span class="Player-Name">Alisson</span></li>
+        <li class="player" style="background-image: url('images/Kelleher.jpeg');"><span class="Player-Name">Kelleher</span></li>
+        <li class="player" style="background-image: url('images/Karius.jpeg');"><span class="Player-Name">Karius</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer"><div><a href="https://www.facebook.com/LiverpoolFC/" target="_blank"><img src="images/Facebook.png" alt="Facebook" class=Site-Link></a><a href="https://www.instagram.com/liverpoolfc/?hl=en" target="_blank"><img src="images/Instagram.png" alt="Instagram" class=Site-Link></a><a href="https://twitter.com/LFC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><img src="images/Twitter.png" alt="Twitter" class=Site-Link></a></div>
+    <div><p>© Copyright 2021 - Liverpool Football Club</p></div></footer>
+
+<div id="Modal-Salah" class="Modal-Mask Modal-Mask-Salah">
   <div class="Modal-Content">
-    <button id="Close" class="Close">Close Modal</button>
+    <button id="closeSalah" class="Close">X</button>
+<img class="Modal-Image" src="images/Salah2.jpeg" alt="">
+<h1>Mohamed Salah</h1>
+<p><b>Signed:</b> 2017
+<br><b>Appearances:</b> 210
+<br><b>Goals</b>: 131
+<br><b>Honours:</b> Premier League (2020), Champions League (2019), UEFA Super Cup (2019), FIFA Club World Cup (2019)</p>
+<hr>
+<br><p>Mohamed Salah is one of the most prolific forwards in European football and a Champions League and Premier League winner with Liverpool.</p>
+<br><p>The Egyptian has been an unstoppable scorer since joining the Reds from AS Roma in the summer of 2017, following up an historic 44-goal debut season with another 27 strikes in his second campaign at Anfield after he had signed a new contract with the club in the summer of 2018.</p>
+<br><p>That latter tally included one in the Champions League final victory over Tottenham Hotspur in Madrid in June 2019, Salah smashing home a second-minute penalty en route to a 2-0 win for Jürgen Klopp’s side.</p>
+<br><p>Success at Estadio Metropolitano provided fitting redemption for the No.11, who was forced off with injury when Liverpool lost the previous year’s showpiece against Real Madrid.</p>
+<br><p>In 2019-20, Salah topped the team’s scoring charts with 23 strikes in all competitions as he helped the club lift their first FIFA Club World Cup and Premier League titles and, in October 2020, a typically-prolific start to the 2020-21 season saw him become the 17th player in Liverpool FC history to reach the landmark of 100 goals for the club.</p>
+<br><p>In the latter stages of the 2020-21 campaign, Salah reached the landmark of 200 appearances for the club in a 4-2 victory over Manchester United at Old Trafford. Typically, he marked the occasion with a goal - his 30th of the season and 124th for the Reds overall.</p>
+<br><p>A talisman for his country, Salah quickly became a fan favourite at Anfield and formed part of a fearsome attacking trio with Roberto Firmino and Sadio Mane.</p>
   </div>
 </div>
+<div id="Modal-Mane" class="Modal-Mask Modal-Mask-Mane">
+  <div class="Modal-Content">
+    <button id="closeMane" class="Close">X</button>
+<img class="Modal-Image" src="images/Mane2.jpeg" alt="">
+<h1>Sadio Mane</h1>
+<p><b>Signed:</b> 2016
+<br><b>Appearances:</b> 226
+<br><b>Goals</b>: 101
+<br><b>Honours:</b> Premier League (2020), Champions League (2019), UEFA Super Cup (2019), FIFA Club World Cup (2019)</p>
+<hr>
+<br><p>Sadio Mane has established himself as one of the best forwards in world football during his time at Liverpool.</p>
+<br><p>Signed from Southampton in the summer of 2016, Mane’s levels have increased year-on-year to help deliver major honours to Anfield.</p>
+<br><p>After taking the club’s No.10 shirt ahead of 2018-19 - a season during which he committed his long-term future to the club - the Senegal international scored 26 times in 50 appearances across all competitions to help the Reds win the Champions League, their first piece of silverware since his arrival.</p>
+<br><p>His total of 22 goals in the Premier League earned him the division’s Golden Boot, along with teammate Mohamed Salah and Pierre-Emerick Aubameyang of Arsenal. </p>
+<br><p>The following campaign - during which he was named 2019 CAF African Player of the Year - saw him produce 22 goals and 12 assists in all competitions as Jürgen Klopp’s side would go on to win the Premier League, UEFA Super Cup and FIFA Club World Cup.</p>
+  </div>
+</div>
+<div id="Modal-Firmino" class="Modal-Mask Modal-Mask-Firmino">
+  <div class="Modal-Content">
+    <button id="closeFirmino" class="Close">X</button>
+<img class="Modal-Image" src="images/Firmino2.jpeg" alt="">
+<h1>Roberto Firmino</h1>
+<p><b>Signed:</b> 2015
+<br><b>Appearances:</b> 297
+<br><b>Goals</b>: 90
+<br><b>Honours:</b> Premier League (2020), Champions League (2019), UEFA Super Cup (2019), FIFA Club World Cup (2019)</p>
+<hr>
+<br><p>Described by Jürgen Klopp as the ‘engine’ of his team, Roberto Firmino is a Champions League and Premier League-winning striker who does so much more than just score goals.</p>
+<br><p>Blessed with prodigious physical gifts that complement his exceptional footballing talents, the Brazil international leads Liverpool’s line with a fearsome and influential combination of industry and ingenuity.</p>
+<br><p>Alongside Sadio Mane and Mohamed Salah, Firmino forms part of one of Europe’s premier attacking trios and scored 43 goals over the course of the 2017-18 and 2018-19 seasons to help the Reds reach back-to-back Champions League finals.</p>
+<br><p>The first of those showpieces, against Real Madrid, ended in heartbreak but, 12 months on, Firmino recovered from a muscle injury in time to start versus Tottenham Hotspur.</p>
+<br><p>Goals by Salah and Divock Origi in Madrid ensured Liverpool exorcised the memories of Kiev and lifted their sixth European Cup.</p>
+  </div>
+</div>
+<div id="Modal-Henderson" class="Modal-Mask Modal-Mask-Henderson">
+  <div class="Modal-Content">
+    <button id="closeHenderson" class="Close">X</button>
+<img class="Modal-Image" src="images/Henderson2.jpeg" alt="">
+<h1>Jordan Henderson</h1>
+<p><b>Signed:</b> 2011
+<br><b>Appearances:</b> 400
+<br><b>Goals</b>: 31
+<br><b>Honours:</b> Premier League (2020), League Cup (2012), Champions League (2019), UEFA Super Cup (2019), FIFA Club World Cup (2019)</p>
+<hr>
+<br><p>Jordan Henderson led Liverpool to Premier League, Champions League, FIFA Club World Cup and UEFA Super Cup glory as the captain of Jürgen Klopp’s champion team.</p>
+<br><p>A relentless and inspirational presence, the midfielder lifted those four major trophies in his trademark 'Hendo shuffle' fashion in the space of a little under 14 months to cement his legacy as a legendary Reds skipper.</p>
+<br><p>Having joined Emlyn Hughes, Phil Thompson, Graeme Souness and Steven Gerrard on the illustrious list of Liverpool’s European Cup-winning captains in June 2019, Henderson went from strength to strength in 2019-20.</p>
+<br><p>A hugely influential figure as Klopp’s side ended a 30-year wait for domestic supremacy and became the first Liverpool team to be crowned world champions, Henderson’s individual endeavours both on and off the pitch were recognised as he was named the Football Writers’ Association’s Footballer of the Year.</p>
+<br><p>Henderson joined Liverpool from Sunderland in the summer of 2011 and his standing at Anfield was underlined when he became the club’s vice-captain in September 2014, before he then took the armband on a permanent basis in July 2015 following Gerrard’s departure.</p>
+<br><p>During the historic 2019-20 season, Henderson passed the 350-appearance mark for the club and, in January 2021, he climbed up to fourth place in Liverpool's Premier League appearance list - behind only Jamie Carragher, Gerrard and Sami Hyypia.</p>
+<br><p>In August 2021, it was announced that Henderson's association with the club would continue further when he signed a new long-term contract.</p>
+  </div>
+</div>
+<div id="Modal-VVD" class="Modal-Mask Modal-Mask-VVD">
+  <div class="Modal-Content">
+    <button id="closeVVD" class="Close">X</button>
+<img class="Modal-Image" src="images/VVD2.jpeg" alt="">
+<h1>Virgil Van Dijk</h1>
+<p><b>Signed:</b> 2018
+<br><b>Appearances:</b> 137
+<br><b>Goals</b>: 13
+<br><b>Honours:</b> Premier League (2020), Champions League (2019), UEFA Super Cup (2019), FIFA Club World Cup (2019)</p>
+<hr>
+<br><p>Virgil van Dijk has established himself as one of the finest defenders in world football since joining Liverpool in January 2018.</p>
+<br><p>The powerful Netherlands international, who combines a graceful reading of the game with a dominant physical skillset, has helped the Reds lift four major trophies to date.</p>
+<br><p>He played every single minute of the 2019-20 Premier League campaign as Liverpool gloriously and emphatically ended their wait for the title with a club-record 99 points.</p>
+<br><p>A constantly imposing presence in the backline, Van Dijk also weighed in with five goals, including a vital double against Brighton and the opener past Manchester United at Anfield.</p>
+<br><p>The historic season also saw the UEFA Super Cup and FIFA Club World Cup added to the trophy cabinet – the latter for the very first time.</p>
+<br><p>The No.4 had previously been a key figure as the Reds clinched a sixth European Cup at the conclusion of his first full season with the club.</p>
+<br><p>Victory over Tottenham Hotspur in Madrid secured the first piece of silverware at Liverpool for Van Dijk, who also missed just 35 minutes of Premier League action in 2018-19 as Jürgen Klopp’s side finished second with 97 points.</p>
+  </div>
+</div>
+<script src="Squad.js"></script>
 </body>
 </html>
